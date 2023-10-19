@@ -13,22 +13,10 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
 
-vim.bo.expandtab = true
-if (vim.bo.filetype == "lua") then
-  vim.bo.tabstop = 2
-  vim.o.tabstop = 2
-else
-  vim.bo.tabstop = 4
-  vim.o.tabstop = 4
-end
-
-vim.o.expandtab = true
-vim.bo.expandtab = true
-vim.o.autoindent = true
-vim.bo.autoindent = true
-vim.o.smartindent = true
-
-vim.o.mouse = 'a'
-
-vim.wo.number = true
+vim.opt.smartindent = true
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+vim.opt.mouse = 'a'
+vim.opt.number = true
 
