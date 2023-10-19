@@ -10,9 +10,12 @@ return {
             filetype = 'NvimTree',
             text = 'File Explorer',
             highlight = 'Directory',
-            text_align = 'left'
+            text_align = 'left',
           }
-        }
+        },
+        indicator = {
+          style = 'underline'
+        },
       }
     }
   end

@@ -5,7 +5,11 @@ return {
     require('lualine').setup {
       options = {
         icons_enabled = true,
-        theme = 'ayu_mirage'
+        theme = 'ayu_mirage',
+        disabled_filetypes = {
+          statusline = {'NvimTree'},
+          winbar = {'NvimTree'}
+        },
       }
     }
   end
